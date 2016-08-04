@@ -42,6 +42,8 @@
 ;; Don't load outdated bytecode
 (setq load-prefer-newer t)
 
+;; Disable menu bar
+(menu-bar-mode -1)
 
 ;; Ido Mode ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'ido)
