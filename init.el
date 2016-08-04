@@ -18,6 +18,10 @@
 
 ;; General Setup ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; Sync emacs kill ring with OSX clipboard
+(require 'pbcopy)
+(turn-on-pbcopy)
+
 ;; Get rid of startup messages
 (setq inhibit-startup-message t)
 (setq initial-scratch-message "")
