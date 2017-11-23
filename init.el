@@ -66,8 +66,8 @@
 (global-set-key (kbd "C-c j") 'counsel-git-grep)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
-;; ;; Avy
-;; (global-set-key (kbd "C-:") 'avy-goto-char) ;; TODO: Test on keyboard that can type this character
+;; Avy
+(global-set-key (kbd "C-m") 'avy-goto-char) ;; TODO: Test on keyboard that can type this character
 
 
 
