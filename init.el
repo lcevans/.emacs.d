@@ -67,7 +67,7 @@
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
 ;; Avy
-(global-set-key (kbd "C-m") 'avy-goto-char) ;; TODO: Test on keyboard that can type this character
+(global-set-key (kbd "C-m") 'avy-goto-char)
 
 
 
