@@ -49,14 +49,19 @@
 (require 'ido)
 (ido-mode t)
 
+;; Magit ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'magit)
+(global-set-key (kbd "C-x g") 'magit-status)
+
+
 
 
 ;; Language Setups ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Java Setup
 (add-hook 'java-mode-hook (lambda ()
-                            (setq c-basic-offset 2
-                             tab-width 2
+                            (setq c-basic-offset 4
+                             tab-width 4
                              indent-tabs-mode nil)))
 (add-hook 'java-mode-hook (lambda ()
 			    "Treat Java 1.5 @-style annotations as comments."
@@ -70,3 +75,17 @@
 
 ;; D setup
 (setq c-default-style "bsd" c-basic-offset 4) ;; Use 4 space indentation
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (magit zenburn-theme xclip pbcopy nhexl-mode markdown-preview-mode ess erlang elm-mode dockerfile-mode d-mode))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
