@@ -67,7 +67,7 @@
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
 ;; Avy
-(global-set-key (kbd "C-m") 'avy-goto-char)
+(global-set-key (kbd "C-t") 'avy-goto-char)
 
 
 
