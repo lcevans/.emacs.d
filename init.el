@@ -112,8 +112,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   (quote
-    (elpy python-x drag-stuff flycheck php-mode rjsx-mode jsx-mode toml-mode go-mode yaml-mode cython-mode avy counsel ivy swiper magit zenburn-theme xclip pbcopy nhexl-mode markdown-preview-mode ess erlang elm-mode dockerfile-mode d-mode))))
+   '(rust-mode elpy python-x drag-stuff flycheck php-mode rjsx-mode jsx-mode toml-mode go-mode yaml-mode cython-mode avy counsel ivy swiper magit zenburn-theme xclip pbcopy nhexl-mode markdown-preview-mode ess erlang elm-mode dockerfile-mode d-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
