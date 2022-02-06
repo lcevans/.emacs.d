@@ -8,8 +8,11 @@
 ;; Set up repos
 (require 'package)
 (setq package-archives '(("melpa-stable" . "https://stable.melpa.org/packages/")
+			 ("melpa" . "http://melpa.org/packages/")
                          ("elpa" . "https://elpa.gnu.org/packages/")))
 (package-initialize)
+(unless package-archive-contents
+  (package-refresh-contents))
 (setq package-enable-at-startup nil)
 
 ;; Use use-package to manage + auto-install packages
