@@ -110,9 +110,3 @@
   :ensure t
   :config
   (setq c-default-style "bsd" c-basic-offset 4)) ;; Use 4 space indentation
-
-;; Python Setup
-(use-package elpy
-  :ensure t
-  :init
-  (elpy-enable))
